@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMeetingInvitationStart"
+    android:gravity="center"
+    android:padding="@dimen/_5sdp"
+    tools:context=".activities.Done">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="@string/you_have_completed_the_mini_clinic_successfully_we_wish_you_good_health_and_long_life"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0D1020"
+        android:layout_margin="10dp"
+        android:text="@string/proceed_to_home"
+        android:textColor="@color/colorTextIcons"
+        android:onClick="ProcceedHome"
+        android:id="@+id/done"/>
+
+</LinearLayout>

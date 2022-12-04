@@ -1,0 +1,51 @@
+<resources>
+    <string-array name="account">
+        <item>Elder</item>
+        <item>Caregiver</item>
+    </string-array>
+    <string name="app_name">Elderly Mind Care</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="video_meeting_conference_app">Video Meeting | Conference App</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="email">Email</string>
+    <string name="your_example_com">email@example.com</string>
+    <string name="password">Password</string>
+    <string name="contact">Phone Number</string>
+    <string name="number_ex">+94xxxxxxxxx</string>
+    <string name="password_hint">• • • • • • • • •</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="we_need_a_few_details_to_get_your_account_ready">Sign up with a new account</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_hint">first name</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_hint">last name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="incoming_meeting_invitation">Incoming Call</string>
+    <string name="sending_meeting_invitation">Sending Call</string>
+    <string name="title_activity_call_log">CallLog</string>
+    <string name="tab_text_1">Outgoing</string>
+    <string name="tab_text_2">Incoming</string>
+    <string name="you_have_completed_the_mini_clinic_successfully_we_wish_you_good_health_and_long_life">YOU HAVE COMPLETED THE MINI CLINIC SUCCESSFULLY.WE WISH YOU GOOD HEALTH AND LONG LIFE.</string>
+    <string name="proceed_to_home">PROCEED TO HOME</string>
+    <string name="regular_scales">Regular Scales</string>
+    <string name="elderly_health_reports">Elderly Health Reports</string>
+    <string name="checked">checked</string>
+    <string name="update_pressure_status">Update Pressure Status</string>
+    <string name="update_weight">Update Weight</string>
+    <string name="update_blood_sugar_level">Update Blood Sugar Level</string>
+    <string name="update_measures">Update Measures</string>
+    <string name="_2_did_you_take_medicine">2.Did YOU TAKE MEDICINE?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="_3_did_you_have_some_rest">3.Did YOU HAVE SOME REST?</string>
+    <string name="date">Date</string>
+    <string name="pressure">Pressure :</string>
+    <string name="_00">00</string>
+    <string name="weight">Weight :</string>
+    <string name="sugar">Sugar :</string>
+    <string name="no_records_are_available_for_the_requested_adult">No records are available for the requested adult</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.elderlymindcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_meet_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_meet_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".activities.FrequentList"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckStatus3"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckStatus2"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ElderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListOfElders"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Measurements"
+            android:exported="false" />
+
+        <service android:name=".YourService" />
+
+        <activity
+            android:name=".activities.CallLog"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CaptureMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Done"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckStatus"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OutgoingInvitationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.IncomingInvitationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.project.elderlymindcare.firebase.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

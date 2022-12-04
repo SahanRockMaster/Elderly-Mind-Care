@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/incoming"
+        android:icon="@drawable/incoming"
+        android:title="Incoming "/>
+    <item
+        android:id="@+id/outgoing"
+        android:icon="@drawable/outgoing"
+        android:title="Outgoing"/>
+</menu>

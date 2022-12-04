@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    tools:context=".activities.Measurements">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/done"
+        android:contentDescription="@string/checked" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/update_pressure_status"
+        android:textColorHint="@color/amp_dark_blue"
+        app:boxStrokeColor="@color/colorPrimaryText"
+        app:hintTextColor="@color/colorPrimaryText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@color/colorPrimaryText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/update_weight"
+        android:textColorHint="@color/amp_dark_blue"
+        app:boxStrokeColor="@color/colorPrimaryText"
+        app:hintTextColor="@color/colorPrimaryText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@color/colorPrimaryText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/update_blood_sugar_level"
+        android:textColorHint="@color/amp_dark_blue"
+        app:boxStrokeColor="@color/colorPrimaryText"
+        app:hintTextColor="@color/colorPrimaryText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@color/colorPrimaryText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimaryText"
+        android:text="@string/update_measures"
+        android:textColor="@color/white"
+        android:id="@+id/update"/>
+
+
+</LinearLayout>
